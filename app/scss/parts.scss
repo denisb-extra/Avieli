@@ -687,3 +687,39 @@ header .header-inner .menu-cont ul.main-menu > li .sub-menu.extra-menu {
 }
 
 /* ----------------- /product box-------------------- */
+
+/* ----------------- social-------------------- */
+.wrapper-social {
+	display: inline-block;
+	margin: auto;
+	margin-top: 80px;
+}
+
+.social {
+	background: #fff;
+
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+	
+	.title {
+		@include f-bl;
+		font-size: 22px;
+		line-height: 2;
+		color: #0077BC;
+		border-left: 5px solid #78C815;
+		padding-left: 25px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	a {
+		color: #000;
+		font-size: 40px;
+		margin: 15px;
+		transition: 0.5s;
+		&:hover {
+			color: #227BC9;
+		}
+	}
+}
+/* ----------------- /social-------------------- */

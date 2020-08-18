@@ -1599,3 +1599,221 @@ section.blog {
 	}
 }
 /* --------------------- /Section blog ---------------------- */
+
+
+
+/* ---------------------- Section post ---------------------- */
+section.post {
+	.img-main {
+		width: 50%;
+		float: left;
+		margin-right: 50px;
+		margin-bottom: 50px;
+		&.mobile {
+			display: none;
+		}
+		img {
+			width: 100%;
+		}
+	}
+
+	.content {
+		.title {
+			@include f-bl;
+			font-size: 36px;
+			line-height: 1;
+			color: #0077BC;
+		}
+
+		@include f-r;
+		font-size: 18px;
+		color: #2C3136;
+
+		p, h1 ,h2, h3, h4, h5 {
+			margin-top: 20px;
+		}
+
+	}
+
+	@media only screen and (max-width : $tw) {
+		.content {
+			.title {
+				font-size: 30px;
+				line-height: 30px;
+			}
+		}
+	}
+
+	@media only screen and (max-width : $mw) { 
+		.content {
+			font-size: 16px;
+			p {
+				margin-top: 15px;
+			}
+		}
+		.img-main {
+			float: none;
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-top: 20px;
+			display: none;
+			&.mobile {
+				display: block;
+			}
+		}
+	}
+}
+/* --------------------- /Section post ---------------------- */
+
+/* ---------------------- Section contacts ---------------------- */
+section.contacts {
+	.parts {
+		display: flex;
+		margin: 0 -30px;
+		.part {
+			
+			padding: 0 30px;
+			&:nth-child(1) {
+				width: 60%;
+			}
+			&:nth-child(2) {
+				width: 40%;
+			}
+		}
+		
+	}
+
+	.part-info {
+		> .title {
+			@include f-bl;
+			font-size: 36px;
+			color: #0077BC;
+		}
+		.contacts {
+			display: flex;
+			margin-top: 25px;
+
+			.item {
+				width: 25%;
+				&:nth-child(1) {
+					width: 50%;
+					margin-right: 0;
+				}
+				@include f-r;
+				font-size: 18px;
+				color: #2C3136;
+
+				p {
+					margin-top: 10px;
+					&:first-child {
+						margin-top: 0;
+					}
+				}
+
+				padding-right: 20px;
+				border-right: 5px solid #78C815;
+				margin-right: 30px;
+			}
+		}
+
+		.map {
+			margin-top: 45px;
+			img {
+				max-width: 100%;
+			}
+		}
+
+		.wrapper-social {
+			margin-top: 45px;
+		}
+	}
+
+	.cont-form {
+		width: 100%;
+		padding: 45px;
+		background: url("../images/index/bg-texture.jpg");
+		text-align: center;
+		.subtitle {
+			@include f-b;
+			font-size: 24px;
+			color: #0077BC;
+			line-height: 1;
+		}
+		.title {
+			@include f-bl;
+			font-size: 61px;
+			color: #3B3B3B;
+			line-height: 0.7;
+		}
+		form {
+			text-align: center;
+			.wpcf7-form-control-wrap, input[type="submit"] {
+				margin: 0;
+				width: 100%;
+				margin-top: 15px;
+				
+			}
+			.wpcf7-form-control-wrap {
+				padding: 0;
+			}
+			input[type="submit"] {
+				margin: auto;
+				margin-top: 45px;
+			}
+		}
+	}
+
+	@media only screen and (max-width : $tw) {
+		.part-info {
+			.contacts {
+				flex-wrap: wrap;
+				.item {
+					width: 100%;
+					margin-right: 0px;
+					margin-top: 20px;
+					&:first-child {
+						margin-top: 0;
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		.cont-form {
+			.title {
+				font-size: 50px;
+			}
+		}
+	}
+
+	@media only screen and (max-width : $mw) {
+		.parts {
+			flex-wrap: wrap;
+			.part {
+				&:nth-child(1) {
+					width: 100%;
+				}
+				&:nth-child(2) {
+					width: 100%;
+					margin-top: 35px;
+				}	
+			}
+		}
+
+		.part-info {
+			> .title {
+				@include f-bl;
+				font-size: 30px;
+			}
+		}
+
+		.cont-form {
+			padding: 25px;
+			.title {
+				font-size: 36px;
+			}
+		}
+	}
+}
+/* --------------------- /Section contacts ---------------------- */

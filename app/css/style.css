@@ -1,6 +1,5 @@
 /* Fonts */
 @font-face {
-<<<<<<< HEAD
   font-family: 'almoni-light';
   src: url("../fonts/almoni-dl-aaa-light.otf") format("truetype"); }
 
@@ -20,324 +19,9 @@
 /* Global */
 html {
   margin: 0 !important; }
-=======
-  font-family: 'opensans-regular';
-  src: url("../fonts/OpenSansHebrew-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'opensans-light';
-  src: url("../fonts/OpenSansHebrew-Light.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'opensans-bold';
-  src: url("../fonts/OpenSansHebrew-Bold.ttf") format("truetype"); }
-
-/* /Fonts */
-/* Global */
-html {
-  margin: 0 !important; }
 
 body {
   position: relative;
-  margin: 0;
-  padding: 0; }
-
-a {
-  text-decoration: none; }
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-p {
-  margin: 0; }
-
-ul {
-  -webkit-padding-start: 0;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-section {
-  width: 100%;
-  max-width: 1920px;
-  margin: auto;
-  overflow: hidden; }
-
-/* ---------------------- Owl carousel ---------------------- */
-body .owl-carousel {
-  margin: auto; }
-
-body .str-left {
-  background: url(../images/icons/str-l.png) no-repeat;
-  background-size: 100% 100%;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  position: relative;
-  left: 0; }
-
-body .str-right {
-  background: url(../images/icons/str-r.png) no-repeat;
-  background-size: 100% 100%;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  position: relative;
-  right: 0; }
-
-body .owl-prev {
-  position: absolute;
-  left: 5px;
-  top: 25% !important;
-  background: none !important;
-  width: 22px;
-  height: 41px; }
-
-body .owl-prev:hover .str-left {
-  left: -5px; }
-
-body .owl-next {
-  position: absolute !important;
-  right: 5px;
-  top: 25% !important;
-  background: none !important;
-  width: 22px;
-  height: 41px; }
-
-body .owl-next:hover .str-right {
-  right: -5px; }
-
-body .owl-theme .owl-dots {
-  text-align: center;
-  -webkit-tap-highlight-color: transparent;
-  margin-top: 35px; }
-
-body .owl-theme .owl-dots .owl-dot {
-  display: inline-block;
-  zoom: 1;
-  display: inline; }
-
-body .owl-theme .owl-dots .owl-dot span {
-  width: 15px;
-  height: 15px;
-  margin: 5px 7px;
-  background: rgba(102, 102, 102, 0.42);
-  display: inline-block;
-  -webkit-backface-visibility: visible;
-  -webkit-transition: opacity 200ms ease;
-  transition: opacity 200ms ease;
-  border-radius: 30px; }
-
-body .owl-theme .owl-dots .owl-dot.active span, body .owl-theme .owl-dots .owl-dot:hover span {
-  background: #dcba69; }
-
-/**
- * Owl Carousel v2.2.1
- * Copyright 2013-2017 David Deutsch
- * Licensed under  ()
- */
-/*
- *  Owl Carousel - Core
- */
-.owl-carousel {
-  display: none;
-  width: 100%;
-  -webkit-tap-highlight-color: transparent;
-  /* position relative and z-index fix webkit rendering fonts issue */
-  position: relative;
-  z-index: 1; }
-
-.owl-carousel .owl-stage {
-  position: relative;
-  -ms-touch-action: pan-Y;
-  -moz-backface-visibility: hidden;
-  /* fix firefox animation glitch */ }
-
-.owl-carousel .owl-stage:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0; }
-
-.owl-carousel .owl-stage-outer {
-  position: relative;
-  overflow: hidden;
-  direction: ltr;
-  /* fix for flashing background */
-  -webkit-transform: translate3d(0px, 0px, 0px); }
-
-.owl-carousel .owl-wrapper,
-.owl-carousel .owl-item {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0); }
-
-.owl-carousel .owl-item {
-  position: relative;
-  min-height: 1px;
-  float: left;
-  -webkit-backface-visibility: hidden;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none; }
-
-.owl-carousel .owl-item img {
-  display: block;
-  width: 100%; }
-
-.owl-carousel .owl-nav.disabled,
-.owl-carousel .owl-dots.disabled {
-  display: none; }
-
-.owl-carousel .owl-nav .owl-prev,
-.owl-carousel .owl-nav .owl-next,
-.owl-carousel .owl-dot {
-  cursor: pointer;
-  cursor: hand;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.owl-carousel.owl-loaded {
-  display: block; }
-
-.owl-carousel.owl-loading {
-  opacity: 0;
-  display: block; }
-
-.owl-carousel.owl-hidden {
-  opacity: 0; }
-
-.owl-carousel.owl-refresh .owl-item {
-  visibility: hidden; }
-
-.owl-carousel.owl-drag .owl-item {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.owl-carousel.owl-grab {
-  cursor: move;
-  cursor: -webkit-grab;
-  cursor: grab; }
-
-.owl-carousel.owl-rtl {
-  direction: rtl; }
-
-.owl-carousel.owl-rtl .owl-item {
-  float: right; }
-
-/* No Js */
-.no-js .owl-carousel {
-  display: block; }
-
-/*
- *  Owl Carousel - Animate Plugin
- */
-.owl-carousel .animated {
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both; }
-
-.owl-carousel .owl-animated-in {
-  z-index: 0; }
-
-.owl-carousel .owl-animated-out {
-  z-index: 1; }
-
-.owl-carousel .fadeOut {
-  -webkit-animation-name: fadeOut;
-          animation-name: fadeOut; }
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-/*
- * 	Owl Carousel - Auto Height Plugin
- */
-.owl-height {
-  -webkit-transition: height 500ms ease-in-out;
-  transition: height 500ms ease-in-out; }
-
-/*
- * 	Owl Carousel - Lazy Load Plugin
- */
-.owl-carousel .owl-item .owl-lazy {
-  opacity: 0;
-  -webkit-transition: opacity 400ms ease;
-  transition: opacity 400ms ease; }
-
-.owl-carousel .owl-item img.owl-lazy {
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d; }
-
-/*
- * 	Owl Carousel - Video Plugin
- */
-.owl-carousel .owl-video-wrapper {
-  position: relative;
-  height: 100%;
-  background: #000; }
-
-.owl-carousel .owl-video-play-icon {
-  position: absolute;
-  height: 80px;
-  width: 80px;
-  left: 50%;
-  top: 50%;
-  margin-left: -40px;
-  margin-top: -40px;
-  background: url("owl.video.play.png") no-repeat;
-  cursor: pointer;
-  z-index: 1;
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 100ms ease;
-  transition: -webkit-transform 100ms ease;
-  transition: transform 100ms ease;
-  transition: transform 100ms ease, -webkit-transform 100ms ease; }
-
-.owl-carousel .owl-video-play-icon:hover {
-  -webkit-transform: scale(1.3, 1.3);
-          transform: scale(1.3, 1.3); }
-
-.owl-carousel .owl-video-playing .owl-video-tn,
-.owl-carousel .owl-video-playing .owl-video-play-icon {
-  display: none; }
-
-.owl-carousel .owl-video-tn {
-  opacity: 0;
-  height: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: opacity 400ms ease;
-  transition: opacity 400ms ease; }
->>>>>>> 6b946ee520f7f348c20a7f4cef607dbd7b5798ce
-
-.owl-carousel .owl-video-frame {
-  position: relative;
-<<<<<<< HEAD
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -945,6 +629,36 @@ header .header-inner .menu-cont ul.main-menu > li .sub-menu.extra-menu {
           padding: 8px; } }
 
 /* ----------------- /product box-------------------- */
+/* ----------------- social-------------------- */
+.wrapper-social {
+  display: inline-block;
+  margin: auto;
+  margin-top: 80px; }
+
+.social {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 10px; }
+  .social .title {
+    font-family: 'almoni-black';
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 2;
+    color: #0077BC;
+    border-left: 5px solid #78C815;
+    padding-left: 25px;
+    margin-left: 15px;
+    margin-right: 15px; }
+  .social a {
+    color: #000;
+    font-size: 40px;
+    margin: 15px;
+    transition: 0.5s; }
+    .social a:hover {
+      color: #227BC9; }
+
+/* ----------------- /social-------------------- */
 /* ----------------- Header -------------------- */
 header {
   width: 100%;
@@ -1662,7 +1376,8 @@ footer .part-top {
   text-align: center; }
   footer .part-top .cont-form {
     padding: 45px;
-    background: url("../images/index/bg-texture.jpg"); }
+    background: url("../images/index/bg-texture.jpg");
+    margin-bottom: 90px; }
     footer .part-top .cont-form .form-title {
       font-family: 'almoni-black';
       font-weight: 900;
@@ -1686,8 +1401,7 @@ footer .part-top {
     font-size: 17px;
     text-align: right;
     width: 100%;
-    margin: auto;
-    margin-top: 90px; }
+    margin: auto; }
     footer .part-top .cols .col {
       margin: 0 10px;
       color: #fff;
@@ -1708,32 +1422,6 @@ footer .part-top {
             color: #227BC9; }
         footer .part-top .cols .col .content p, footer .part-top .cols .col .content li {
           margin-top: 10px; }
-  footer .part-top .wrapper-social {
-    display: inline-block;
-    margin: auto;
-    margin-top: 80px; }
-  footer .part-top .social {
-    background: #fff;
-    display: flex;
-    align-items: center;
-    padding: 0 10px; }
-    footer .part-top .social .title {
-      font-family: 'almoni-black';
-      font-weight: 900;
-      font-size: 22px;
-      line-height: 2;
-      color: #0077BC;
-      border-left: 5px solid #78C815;
-      padding-left: 25px;
-      margin-left: 15px;
-      margin-right: 15px; }
-    footer .part-top .social a {
-      color: #000;
-      font-size: 40px;
-      margin: 15px;
-      transition: 0.5s; }
-      footer .part-top .social a:hover {
-        color: #227BC9; }
 
 footer .part-bottom {
   background: #141414;
@@ -1763,7 +1451,8 @@ footer .part-bottom {
     padding-top: 35px;
     background-size: auto 100%; }
     footer .part-top .cont-form {
-      padding: 25px 15px; }
+      padding: 25px 15px;
+      margin-bottom: 35px; }
       footer .part-top .cont-form .form-title {
         padding: 0;
         border: none;
@@ -1773,8 +1462,7 @@ footer .part-bottom {
         footer .part-top .cont-form form input[type='submit'] {
           margin-top: 25px; }
     footer .part-top .cols {
-      flex-wrap: wrap;
-      margin-top: 35px; }
+      flex-wrap: wrap; }
       footer .part-top .cols .col {
         margin: 20px 2%;
         width: 46%; }
@@ -2940,10 +2628,154 @@ section.blog .boxes {
           font-size: 16px; } }
 
 /* --------------------- /Section blog ---------------------- */
-=======
-  z-index: 1;
-  height: 100%;
-  width: 100%; }
+/* ---------------------- Section post ---------------------- */
+section.post .img-main {
+  width: 50%;
+  float: left;
+  margin-right: 50px;
+  margin-bottom: 50px; }
+  section.post .img-main.mobile {
+    display: none; }
+  section.post .img-main img {
+    width: 100%; }
 
-/* --------------------- /Owl carousel ---------------------- */
->>>>>>> 6b946ee520f7f348c20a7f4cef607dbd7b5798ce
+section.post .content {
+  font-family: 'almoni-regular';
+  font-weight: 400;
+  font-size: 18px;
+  color: #2C3136; }
+  section.post .content .title {
+    font-family: 'almoni-black';
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 1;
+    color: #0077BC; }
+  section.post .content p, section.post .content h1, section.post .content h2, section.post .content h3, section.post .content h4, section.post .content h5 {
+    margin-top: 20px; }
+
+@media only screen and (max-width: 1200px) {
+  section.post .content .title {
+    font-size: 30px;
+    line-height: 30px; } }
+
+@media only screen and (max-width: 950px) {
+  section.post .content {
+    font-size: 16px; }
+    section.post .content p {
+      margin-top: 15px; }
+  section.post .img-main {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+    display: none; }
+    section.post .img-main.mobile {
+      display: block; } }
+
+/* --------------------- /Section post ---------------------- */
+/* ---------------------- Section contacts ---------------------- */
+section.contacts .parts {
+  display: flex;
+  margin: 0 -30px; }
+  section.contacts .parts .part {
+    padding: 0 30px; }
+    section.contacts .parts .part:nth-child(1) {
+      width: 60%; }
+    section.contacts .parts .part:nth-child(2) {
+      width: 40%; }
+
+section.contacts .part-info > .title {
+  font-family: 'almoni-black';
+  font-weight: 900;
+  font-size: 36px;
+  color: #0077BC; }
+
+section.contacts .part-info .contacts {
+  display: flex;
+  margin-top: 25px; }
+  section.contacts .part-info .contacts .item {
+    width: 25%;
+    font-family: 'almoni-regular';
+    font-weight: 400;
+    font-size: 18px;
+    color: #2C3136;
+    padding-right: 20px;
+    border-right: 5px solid #78C815;
+    margin-right: 30px; }
+    section.contacts .part-info .contacts .item:nth-child(1) {
+      width: 50%;
+      margin-right: 0; }
+    section.contacts .part-info .contacts .item p {
+      margin-top: 10px; }
+      section.contacts .part-info .contacts .item p:first-child {
+        margin-top: 0; }
+
+section.contacts .part-info .map {
+  margin-top: 45px; }
+  section.contacts .part-info .map img {
+    max-width: 100%; }
+
+section.contacts .part-info .wrapper-social {
+  margin-top: 45px; }
+
+section.contacts .cont-form {
+  width: 100%;
+  padding: 45px;
+  background: url("../images/index/bg-texture.jpg");
+  text-align: center; }
+  section.contacts .cont-form .subtitle {
+    font-family: 'almoni-bold';
+    font-weight: 700;
+    font-size: 24px;
+    color: #0077BC;
+    line-height: 1; }
+  section.contacts .cont-form .title {
+    font-family: 'almoni-black';
+    font-weight: 900;
+    font-size: 61px;
+    color: #3B3B3B;
+    line-height: 0.7; }
+  section.contacts .cont-form form {
+    text-align: center; }
+    section.contacts .cont-form form .wpcf7-form-control-wrap, section.contacts .cont-form form input[type="submit"] {
+      margin: 0;
+      width: 100%;
+      margin-top: 15px; }
+    section.contacts .cont-form form .wpcf7-form-control-wrap {
+      padding: 0; }
+    section.contacts .cont-form form input[type="submit"] {
+      margin: auto;
+      margin-top: 45px; }
+
+@media only screen and (max-width: 1200px) {
+  section.contacts .part-info .contacts {
+    flex-wrap: wrap; }
+    section.contacts .part-info .contacts .item {
+      width: 100%;
+      margin-right: 0px;
+      margin-top: 20px; }
+      section.contacts .part-info .contacts .item:first-child {
+        margin-top: 0;
+        width: 100%; }
+  section.contacts .cont-form .title {
+    font-size: 50px; } }
+
+@media only screen and (max-width: 950px) {
+  section.contacts .parts {
+    flex-wrap: wrap; }
+    section.contacts .parts .part:nth-child(1) {
+      width: 100%; }
+    section.contacts .parts .part:nth-child(2) {
+      width: 100%;
+      margin-top: 35px; }
+  section.contacts .part-info > .title {
+    font-family: 'almoni-black';
+    font-weight: 900;
+    font-size: 30px; }
+  section.contacts .cont-form {
+    padding: 25px; }
+    section.contacts .cont-form .title {
+      font-size: 36px; } }
+
+/* --------------------- /Section contacts ---------------------- */
